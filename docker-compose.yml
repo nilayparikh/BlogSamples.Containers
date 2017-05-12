@@ -1,0 +1,8 @@
+version: '2.1'
+
+services:
+  dotnet.core.microservices.helloworld:
+    image: dotnet.core.microservices.helloworld
+    build:
+      context: ./DotNet.Core.Microservices.HelloWorld
+      dockerfile: Dockerfile

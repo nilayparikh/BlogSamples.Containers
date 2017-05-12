@@ -1,0 +1,8 @@
+version: '2.1'
+
+services:
+  dotnet.core.microservices.helloworld:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "80"
