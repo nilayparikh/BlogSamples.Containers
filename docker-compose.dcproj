@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" Sdk="Microsoft.Docker.Sdk">
   <PropertyGroup Label="Globals">
-    <ProjectGuid>0ec3c6d8-bdb1-474f-8def-0bd87d28e3ae</ProjectGuid>
+    <ProjectGuid>f7d36d7a-fb9d-4de6-87a0-96969886be51</ProjectGuid>
     <DockerLaunchBrowser>True</DockerLaunchBrowser>
     <DockerServiceUrl>http://localhost:{ServicePort}/api/values</DockerServiceUrl>
-    <DockerServiceName>dotnet.core.microservices.helloworld</DockerServiceName>
+    <DockerServiceName>docker.dotnet.core.helloworld</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
     <None Include="docker-compose.ci.build.yml" />

@@ -1,15 +1,15 @@
-version: '2.1'
+version: '2'
 
 services:
-  dotnet.core.microservices.helloworld:
-    image: dotnet.core.microservices.helloworld:dev
+  docker.dotnet.core.helloworld:
+    image: docker.dotnet.core.helloworld:dev
     build:
       args:
         source: ${DOCKER_BUILD_SOURCE}
     environment:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
     volumes:
-      - ./DotNet.Core.Microservices.HelloWorld:/app
+      - ./docker.dotnet.core.helloworld:/app
       - ~/.nuget/packages:/root/.nuget/packages:ro
       - ~/clrdbg:/clrdbg:ro
     entrypoint: tail -f /dev/null

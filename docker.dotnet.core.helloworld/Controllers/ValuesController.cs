@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace DotNet.Core.Microservices.HelloWorld.Controllers
+namespace docker.dotnet.core.helloworld.Controllers
 {
     [Route("api/[controller]")]
     public class ValuesController : Controller
@@ -13,7 +13,7 @@ namespace DotNet.Core.Microservices.HelloWorld.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "https://blog.nilayparikh.com/", "Rocks" };
+            return new string[] { "value1", "value2" };
         }
 
         // GET api/values/5

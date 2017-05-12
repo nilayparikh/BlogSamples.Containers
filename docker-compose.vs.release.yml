@@ -1,7 +1,7 @@
-version: '2.1'
+version: '2'
 
 services:
-  dotnet.core.microservices.helloworld:
+  docker.dotnet.core.helloworld:
     build:
       args:
         source: ${DOCKER_BUILD_SOURCE}

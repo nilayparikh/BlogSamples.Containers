@@ -1,8 +1,8 @@
-version: '2.1'
+version: '2'
 
 services:
-  dotnet.core.microservices.helloworld:
+  docker.dotnet.core.helloworld:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
     ports:
-      - "9090"
+      - "80"

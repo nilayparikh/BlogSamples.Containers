@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 
-namespace DotNet.Core.Microservices.HelloWorld
+namespace docker.dotnet.core.helloworld
 {
     public class Program
     {
@@ -16,7 +16,6 @@ namespace DotNet.Core.Microservices.HelloWorld
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseStartup<Startup>()
-                .UseApplicationInsights()
                 .Build();
 
             host.Run();
